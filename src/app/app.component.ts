@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FooterComponent } from './layout/footer/footer.component';
+import { AuthService } from './services/auth.service';
 
 
 @Component({
@@ -8,5 +8,6 @@ import { FooterComponent } from './layout/footer/footer.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  constructor(private auth: AuthService) { }
   title = 'travelgram';
 }
